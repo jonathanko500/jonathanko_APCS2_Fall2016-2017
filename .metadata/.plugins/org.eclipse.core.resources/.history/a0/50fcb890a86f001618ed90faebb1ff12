@@ -25,7 +25,7 @@ public class Calculate {
 		return(answer);
 	}
 	
-	public static double average2 (double number1, double number2, double 3) {
+	public static double average (double number1, double number2, double 3) {
 		double answer;
 		answer=(number1+number2+number3)/3 ;
 		return(answer);	

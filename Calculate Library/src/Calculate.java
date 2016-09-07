@@ -43,4 +43,29 @@ public class Calculate {
 		return((numb2*numb2)-(4*numb1*numb2));
 	}
 	
-	public static 
+	public static int toImproperFrac (int numb1, int numb2, int numb3) {
+		return((numb1*numb2)/numb3);
+	}
+	
+	public static int toMixedNum (int numb1, int numb2, int numb3) {
+		return(numb1+(numb2/numb3));
+		
+	}
+	public static int foil (int numb1, int numb2, int numb3, int numb4, int numbn) {
+		return (((numb1*numbn)+numb2)*((numb3*numbn)+numb4));
+	}
+	
+	public static boolean isDivisivleBy (int x, int y) {
+		if (x%y ==0) {
+			return  true ;
+		} else {
+			return false ;
+		}
+		
+	public static double absValue (double numb) {
+		if (numb == -numb) {
+			return (numb);
+		} else {
+			return (numb) ;
+		}
+	public static int max (int numb1, int numb2)

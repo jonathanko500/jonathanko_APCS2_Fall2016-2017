@@ -55,44 +55,17 @@ public class Calculate {
 		return (((numb1*numbn)+numb2)*((numb3*numbn)+numb4));
 	}
 	
-	public static boolean isDivisibleBy (boolean x, boolean y) {
-		if (x%y) {
-			return true;
+	public static boolean isDivisivleBy (int x, int y) {
+		if (x%y ==0) {
+			return  true ;
 		} else {
-			return false;
-		}			
-		}
-	
-	public static double absValue (double numb) {
-		if (numb == -numb) {
-			return numb;
-		} else {
-			return numb;
-		}
-	}
-	public static int max (int numb1, int numb2) {
-		if (numb1 > numb2) {
-			return numb1;
-		} else {
-			return numb1;
-		}
-	}
-	public static double max2 (double numb1, double numb2, double numb3) {
-		if (numb1 > numb2 > numb3) {
-			return numb1;
-		} else {
-			return numb1;
-		} else {
-			return numb1;
-		}
-	}
-	public static int min (int numb1, int numb2) {
-		if(numb1 < numb2) {
-			return numb2;
-		} else {
-			return numb1;
-		}
-}
+			return false ;
 		}
 		
-	}
+	public static double absValue (double numb) {
+		if (numb == -numb) {
+			return (numb);
+		} else {
+			return (numb) ;
+		}
+	public static int max (int numb1, int numb2)

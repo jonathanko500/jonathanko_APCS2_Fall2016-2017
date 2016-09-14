@@ -12,57 +12,47 @@ public class Calculate {
 		answer=number*number;
 		return(answer);
 	}
-
 	public static int cube (int number) {
 		int answer ;
 		answer=number*number*number ;
 		return(answer);
 	}
-	
 	public static double average (double number1, double number2) {
 		double answer;
 		answer=(number1+number2)/2 ;
 		return(answer);
-	}
-	
+	}	
 	public static double average (double number1, double number2, double number3) {
 		double answer;
 		answer=(number1+number2+number3)/3.0 ;
 		return(answer);	
-	}
-	
+	}	
 	public static double toDegree (double numb) {
 		return((numb*3.14159)/180);
-	}
-	
+	}	
 	public static double toRaidians (double numb) {
 		return((numb*3.14159)*180);
 	}
-	
 	public static double discriminant (double numb1, double numb2, double numb3) {
 		return((numb2*numb2)-(4*numb1*numb2));
 	}
-	
 	public static int toImproperFrac (int numb1, int numb2, int numb3) {
 		return((numb1*numb2)/numb3);
 	}
-	
 	public static int toMixedNum (int numb1, int numb2, int numb3) {
 		return(numb1+(numb2/numb3));
 		
 	}
 	public static int foil (int numb1, int numb2, int numb3, int numb4, int numbn) {
 		return (((numb1*numbn)+numb2)*((numb3*numbn)+numb4));
-	}
-	
+	}	
 	public static boolean isDivisibleBy (boolean x, boolean y) {
-		if (x%y) {
+		if (x % y) {
 			return true;
 		} else {
 			return false;
 		}			
-		}
-	
+}	
 	public static double absValue (double numb) {
 		if (numb == -numb) {
 			return numb;
@@ -77,22 +67,29 @@ public class Calculate {
 			return numb1;
 		}
 	}
-	public static double max2 (double numb1, double numb2, double numb3) {
-		if (numb1 > numb2 > numb3) {
-			return numb1;
+	public static double max1 (double numb1, double numb2, double numb3) {
+			if (numb1 > numb3 && numb1 > numb3) {
+				return numb1;
+				}
+			else if (numb2 > numb3 && numb2 > numb1) {
+				return numb2;
+				}
+			else {
+				return numb3;
+			}	
+		}	
+	public static int min (int numb1, int numb2) {
+		if (numb1 < numb2) {
+			return numb1 ;
 		} else {
-			return numb1;
-		} else {
-			return numb1;
+			return numb2 ;
 		}
 	}
-	public static int min (int numb1, int numb2) {
-		if(numb1 < numb2) {
-			return numb2;
-		} else {
-			return numb1;
-		}
-}
-		}
-		
+	public static double round2 (double numb1){
+		numb1 = numb1 + .005;
+		double roundNumb = (int)numb1 * 100;
+		return (roundNumb/100);
+	}
+	public static double exponent (double numb1, int numb2) {
+		 
 	}

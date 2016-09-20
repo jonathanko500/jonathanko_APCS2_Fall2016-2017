@@ -46,13 +46,15 @@ public class Calculate {
 	public static int foil (int numb1, int numb2, int numb3, int numb4, int numbn) {
 		return (((numb1*numbn)+numb2)*((numb3*numbn)+numb4));
 	}	
-	public static boolean isDivisibleBy (boolean x, boolean y) {
-		if (x % y) {
+	public static boolean isDivisibleBy(int numb1, int numb2) {
+		if (numb1 % numb2 == 0){
 			return true;
-		} else {
-			return false;
-		}			
-}	
+		}
+		else{
+		System.out.println(numb1 + "is not divisible by" + numb2);
+		return false;
+		}
+	}
 	public static double absValue (double numb) {
 		if (numb == -numb) {
 			return numb;
@@ -91,5 +93,39 @@ public class Calculate {
 		return (roundNumb/100);
 	}
 	public static double exponent (double numb1, int numb2) {
-		 
+		double returnNumb = 0;
+		double calcNumb = numb1;
+		for (int numb = 1; numb < numb2; numb++) {
+			returnNumb = calcNumb * numb1;
+			calcNumb = returnNumb;
+		}
+		System.out.println(returnNumb);
+		return (returnNumb);
+	}
+	public static int factorial (int numb) {
+		int product = 1;
+		for (int i = 2; i <= numb; i++) {
+			product = product * i;
+		}
+		return product;
+	}
+	public static boolean isPrime (int a) {
+		for(int i=2;i<a;i++) {
+			if(a%i==0) {
+				return false;
+			}else {
+				return true;
+			}
+		}
+	}
+	public static int gcf (int x, int y) {
+		for(int i=x;i>0;i--) {
+			if(x%i==0&&y%i==0) {
+				Calculate.isDivisibleBy(x, y);
+				return i;
+			}
+		}
+	}
+	public static double sqrt (double x) {
+		
 	}

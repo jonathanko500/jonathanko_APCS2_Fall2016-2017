@@ -117,6 +117,7 @@ public class Calculate {
 				return true;
 			}
 		}
+	}
 	public static int gcf (int x, int y) {
 		for(int i=x;i>0;i--) {
 			if(x%i==0&&y%i==0) {
@@ -124,13 +125,7 @@ public class Calculate {
 				return i;
 			}
 		}
-	public static double sqrt (double x) {
-		double t;
-		double squareRoot = x/ 2;
-		do {
-			t = squareRoot;
-			squareRoot = (t + (x / t)) / 2;
-		} while ((t - squareRoot) != 0);
-		return squareRoot;
 	}
+	public static double sqrt (double x) {
+		
 	}

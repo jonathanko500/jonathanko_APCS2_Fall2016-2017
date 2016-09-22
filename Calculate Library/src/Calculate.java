@@ -47,6 +47,9 @@ public class Calculate {
 		return (((numb1*numbn)+numb2)*((numb3*numbn)+numb4));
 	}	
 	public static boolean isDivisibleBy(int numb1, int numb2) {
+		if (numb2 == 0) {
+			throw new IllegalArgumentException ("divide by 0");
+		}
 		if (numb1 % numb2 == 0){
 			return true;
 		}
@@ -103,6 +106,9 @@ public class Calculate {
 		return (returnNumb);
 	}
 	public static int factorial (int numb) {
+		if (numb < 0) {
+			throw new IllegalArgumentException ("-numb");
+		}
 		int product = 1;
 		for (int i = 2; i <= numb; i++) {
 			product = product * i;
@@ -125,6 +131,9 @@ public class Calculate {
 			}
 		}
 	public static double sqrt (double x) {
+		if (x < 0) {
+			throw new IllegalArgumentException ("-x");
+		}
 		double t;
 		double squareRoot = x/ 2;
 		do {
@@ -133,4 +142,7 @@ public class Calculate {
 		} while ((t - squareRoot) != 0);
 		return squareRoot;
 	}
+	public static int quadForm (int a, int b, int c) {
+		double disc = discriminant(a, b, c)
+		if (disc > 0 ) {
 	}

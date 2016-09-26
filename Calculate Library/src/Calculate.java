@@ -142,7 +142,6 @@ public class Calculate {
 		} while ((t - squareRoot) != 0);
 		return squareRoot;
 	}
-	public static int quadForm (int a, int b, int c) {
-		double disc = discriminant(a, b, c)
-		if (disc > 0 ) {
-	}
+	public static int quadForm (int x) {
+		
+	

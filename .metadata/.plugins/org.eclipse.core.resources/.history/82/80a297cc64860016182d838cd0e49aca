@@ -130,6 +130,7 @@ public class Calculate {
 				return i;
 			}
 		}
+	}
 	public static double sqrt (double x) {
 		if (x < 0) {
 			throw new IllegalArgumentException ("-x");
@@ -143,6 +144,5 @@ public class Calculate {
 		return squareRoot;
 	}
 	public static int quadForm (int a, int b, int c) {
-		double disc = discriminant(a, b, c)
-		if (disc > 0 ) {
-	}
+		
+	

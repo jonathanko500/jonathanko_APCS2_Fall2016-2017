@@ -19,7 +19,7 @@ public class ProcessingNumbers {
 			} else if (inputNum < min) {
 				min = inputNum;
 			}
-			System.out.println(evenSum);
+			System.out.println(evenSum + max);
 			}
 			}
 		}

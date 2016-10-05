@@ -1,4 +1,4 @@
-import java.util. *
+import java.util.*;
 public class ProcessingNumbers {
 	public static void main (String [] args) {
 		Scanner userInput = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class ProcessingNumbers {
 			} else if (inputNum < min) {
 				min = inputNum;
 			}
-			System.out.println(evenSum);
+			System.out.println(largestEven);
 			}
 			}
 		}

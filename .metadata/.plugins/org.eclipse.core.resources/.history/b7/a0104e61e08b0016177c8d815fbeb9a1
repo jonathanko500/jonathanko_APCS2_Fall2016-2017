@@ -120,9 +120,9 @@ public class Calculate {
 		for(int i=x;i>0;i--) {
 			if(x%i==0&&y%i==0) {
 				Calculate.isDivisibleBy(x, y);
-				return i;
+				return x;
 			}
-		} return x;
+		}
 	}
 	public static double sqrt (double x) {
 		if (x < 0) {

@@ -1,11 +1,3 @@
-/**
- * 
- */
-
-/**
- * @author APCS2
- *
- */
 public class Calculate {
 	public static int square (int number) {
 		int answer;
@@ -123,6 +115,7 @@ public class Calculate {
 				return true;
 			}
 		}
+	}
 	public static int gcf (int x, int y) {
 		for(int i=x;i>0;i--) {
 			if(x%i==0&&y%i==0) {
@@ -145,4 +138,4 @@ public class Calculate {
 	}
 	public static int quadForm (int a, int b, int c) {
 		
-	
+	}

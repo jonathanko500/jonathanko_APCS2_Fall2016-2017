@@ -114,7 +114,7 @@ public class Calculate {
 			}else {
 				return true;
 			}
-		} return true;
+		}
 	}
 	public static int gcf (int x, int y) {
 		for(int i=x;i>0;i--) {
@@ -122,7 +122,7 @@ public class Calculate {
 				Calculate.isDivisibleBy(x, y);
 				return i;
 			}
-		} return x;
+		}
 	}
 	public static double sqrt (double x) {
 		if (x < 0) {
@@ -139,4 +139,3 @@ public class Calculate {
 	public static int quadForm (int a, int b, int c) {
 		return 5;
 	}
-}

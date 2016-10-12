@@ -15,6 +15,17 @@ public class Magpie2 {
 		String response = "";
 		if (statement.indexOf("no") >= 0) {
 			response = "Why?";
+		}else if (statement.indexOf("hate") >= 0) {
+			response = "Why?";
+		}else if (statement.indexOf("like") >=0) {
+			response = "Why?";
+		}else if (statement.indexOf("Hello") >=0
+				|| statement.indexOf("Hi") >=0
+				|| statement .indexOf("Hey") >=0
+				|| statement .indexOf("hello") >=0
+				|| statement .indexOf("hi") >=0
+				|| statement .indexOf("hey") >=0 ) {
+			response = "Hello!";
 		} else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
@@ -35,7 +46,7 @@ public class Magpie2 {
 	 * returns a non-committal string
 	 */
 	private String getRandomResponse() {
-		final int NUMBER_OF_RESPONSES = 4;
+		final int NUMBER_OF_RESPONSES = 6;
 		double r = Math.random();
 		int whichResponse = (int) (r * NUMBER_OF_RESPONSES);
 		String response = "";
@@ -48,8 +59,11 @@ public class Magpie2 {
 			response = "Do you really think so?";
 		} else if (whichResponse == 3) {
 			response = "You don't say.";
+		} else if (whichResponse == 4) {
+			response = "Amazing.";
+		} else if (whichResponse == 5) {
+			response = "Nice.";
 		}
-
 		return response;
 	}
 }

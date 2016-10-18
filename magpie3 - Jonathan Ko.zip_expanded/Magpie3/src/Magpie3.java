@@ -15,19 +15,62 @@ public class Magpie3 {
 	 * 4) Use the code to complete the tracing in the handout.
 	 * 
 	 */
-
-	/**
-	 * Gives a response to a user statement
-	 * takes in user statement
-	 * response based on the rules given
-	 */
-	
-	
 	public String getResponse(String statement) {
-		
-		// Paste part 2 code here	
-		
-		
+		public class Magpie2 {
+			public String getGreeting() {
+				return "Hello, let's talk.";
+			}
+			public String getResponse(String statement) {
+				String response = "";
+				if (statement.indexOf("no") >= 0) {
+					response = "Why?";
+				}else if (statement.indexOf("hate") >= 0) {
+					response = "Why?";
+				}else if (statement.indexOf("like") >=0) {
+					response = "Why?";
+				}else if (statement.indexOf("Hello") >=0
+						|| statement.indexOf("Hi") >=0
+						|| statement .indexOf("Hey") >=0
+						|| statement .indexOf("hello") >=0
+						|| statement .indexOf("hi") >=0
+						|| statement .indexOf("hey") >=0 ) {
+					response = "Hello!";
+				} else if (statement.indexOf("mother") >= 0
+						|| statement.indexOf("father") >= 0
+						|| statement.indexOf("sister") >= 0
+						|| statement.indexOf("brother") >= 0) {
+					response = "Tell me more about your family.";
+				} else if (statement.indexOf("Mr.") >= 0
+						|| statement.indexOf("Mrs.") >= 0
+						|| statement.indexOf("Ms.") >= 0) {
+					response = "Sound like a good teacher.";
+				} else {
+					response = getRandomResponse();
+				}
+				return response;
+			}
+			private String getRandomResponse() {
+				final int NUMBER_OF_RESPONSES = 6;
+				double r = Math.random();
+				int whichResponse = (int) (r * NUMBER_OF_RESPONSES);
+				String response = "";
+				if (whichResponse == 0) {
+					response = "Interesting, tell me more.";
+				} else if (whichResponse == 1) {
+					response = "Hmmm.";
+				} else if (whichResponse == 2) {
+					response = "Do you really think so?";
+				} else if (whichResponse == 3) {
+					response = "You don't say.";
+				} else if (whichResponse == 4) {
+					response = "Amazing.";
+				} else if (whichResponse == 5) {
+					response = "Nice.";
+				}
+				return response;
+			}
+		}
+	
 	}
 
 	/**

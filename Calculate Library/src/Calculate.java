@@ -19,11 +19,11 @@ public class Calculate {
 		answer=(number1+number2+number3)/3.0 ;
 		return(answer);	
 	}	
-	public static double toDegree (double numb) {
-		return((numb*3.14159)/180);
+	public static double toDegrees (double number) {
+		return((number*3.14159)/180);
 	}	
-	public static double toRaidians (double numb) {
-		return((numb*3.14159)*180);
+	public static double toRadians  (double number) {
+		return((number*3.14159)*180);
 	}
 	public static double discriminant (double numb1, double numb2, double numb3) {
 		return((numb2*numb2)-(4*numb1*numb2));
@@ -64,7 +64,7 @@ public class Calculate {
 			return numb1;
 		}
 	}
-	public static double max1 (double numb1, double numb2, double numb3) {
+	public static double max2 (double numb1, double numb2, double numb3) {
 			if (numb1 > numb3 && numb1 > numb3) {
 				return numb1;
 				}

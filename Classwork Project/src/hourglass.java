@@ -1,9 +1,7 @@
 public class hourglass {
 	public static void main(String[] args) {
-		printBase(); //Print the firstline
-		topHalf(); //Print the top half
-		bottomHalf();//Print the Bottom half
-		
+		printBase(); //Print the base
+		topHalf(); //Print the top halfbottomHalf();
 	}
 	public static void printBase() {
 		System.out.print("|");
@@ -26,17 +24,5 @@ public class hourglass {
 		}
 		System.out.println("     ||");
 	}
-	public static void bottomHalf(){
-		for (int i=4; i<=4; i--){
-			for (int j=1; j<=i; j++){
-				System.out.print(" ");
-			}
-			System.out.print("\\");
-			for (int j=5-i; j>0; j++) { 
-				System.out.print("::");
-			}
-		System.out.println("/");
-		}
-		
-	}
 }
+	

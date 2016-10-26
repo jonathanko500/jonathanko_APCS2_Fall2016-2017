@@ -1,15 +1,23 @@
 public class Calculate {
 	public static int square (int number) {
-		return(number * number);
+		int answer;
+		answer=number*number;
+		return(answer);
 	}
 	public static int cube (int number) {
-		return(number*number*number);
+		int answer ;
+		answer=number*number*number ;
+		return(answer);
 	}
 	public static double average (double number1, double number2) {
-		return((number1+number2)/2);
+		double answer;
+		answer=(number1+number2)/2 ;
+		return(answer);
 	}	
-	public static double average (double x, double y, double z) { //overloaded average
-		return((x+y+z)/3.0);
+	public static double average (double number1, double number2, double number3) {
+		double answer;
+		answer=(number1+number2+number3)/3.0 ;
+		return(answer);	
 	}	
 	public static double toDegrees (double number) {
 		return((number*3.14159)/180);
@@ -17,10 +25,10 @@ public class Calculate {
 	public static double toRadians  (double number) {
 		return((number*3.14159)*180);
 	}
-	public static double discriminant (double a, double b, double c) { //formula comes from quadratic formula
-		return((b*b)-(4*a*c));
+	public static double discriminant (double number1, double number2, double number3) {
+		return((number2*number2)-(4*number1*number2));
 	}
-	public static int toImproperFrac (int number1, int number2, int number3) { 
+	public static int toImproperFrac (int number1, int number2, int number3) {
 		return((number1*number2)/number3);
 	}
 	public static int toMixedNum (int number1, int number2, int number3) {
@@ -56,7 +64,7 @@ public class Calculate {
 			return y;
 		}
 	}
-	public static double max2 (double x, double y, double z) { //overloaded max
+	public static double max2 (double x, double y, double z) {
 			if (x > y && y > z) {
 				return x;
 				}
@@ -100,7 +108,7 @@ public class Calculate {
 		return product;
 	}
 	public static boolean isPrime (int a) {
-		for(int i=2;i<a;) {
+		for(int i=2;i<a;i++) {
 			if(a%i==0) {
 				return false;
 			}else {

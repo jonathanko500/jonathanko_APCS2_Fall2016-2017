@@ -1,0 +1,8 @@
+	public class DoMath {
+	public static void main (String []args) {
+		Calculate.average(-3, 7 ,30); 
+		System.out.println(Calculate.average(-3, 7, 30));
+	}
+}
+		
+		

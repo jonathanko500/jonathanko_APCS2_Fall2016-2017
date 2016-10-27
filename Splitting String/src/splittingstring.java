@@ -5,8 +5,7 @@ public class splittingstring {
 		String original = "really I really like really red apples really !";
 		String [] change = original.split("really");
 		System.out.println(Arrays.toString(change));
-		
-		String everything = "applespineapplesbreadlettucetomatobaconmayohambreadcheese";
+		String everything = "breadhamcheesebread";
 		String [] removed = everything.split("bread");
 		System.out.println(Arrays.toString(removed));
 		
@@ -37,9 +36,5 @@ public class splittingstring {
 		 * use String.split to split up the sandwich at the spaces, " ", and return what's in the middle of the sandwich and ignores what's on the outside
 		 * Again, what if it's a fancy sandwich with multiple pieces of bread?
 		*/
-
-		
-
 	}
-
-}
+}	

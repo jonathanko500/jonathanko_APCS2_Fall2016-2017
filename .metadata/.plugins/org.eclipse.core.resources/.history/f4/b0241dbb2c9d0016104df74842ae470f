@@ -14,11 +14,6 @@ public class splittingstring {
 		String [] noSpace = space.split(" ");
 		System.out.println(Arrays.toString(noSpace));
 }
-	public static void main2 (String [] args) {
-		
-
-
-	}
 	{
 		//String.split();
 		//It's a method that acts on a string, <StringName>.split(<String sp>);

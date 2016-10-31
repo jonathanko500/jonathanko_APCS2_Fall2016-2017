@@ -1,0 +1,8 @@
+	public class DoMath {
+	public static void main (String []args) {
+		Calculate.isPrime(999) ; 
+		System.out.println(Calculate.isPrime(999));
+	}
+}
+		
+		

@@ -1,0 +1,8 @@
+	public class DoMath {
+	public static void main (String []args) {
+		Calculate.toDegrees(100) ; 
+		System.out.println(Calculate.toDegrees(100));
+	}
+}
+		
+		

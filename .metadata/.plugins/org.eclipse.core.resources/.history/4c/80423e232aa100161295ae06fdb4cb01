@@ -11,11 +11,11 @@ public class Calculate {
 	public static double average (double x, double y, double z) { //overloaded average
 		return((x+y+z)/3.0);
 	}	
-	public static double toDegrees (double x) {//radian to degrees
-		return((x*3.14159)/(3.14159/180));
+	public static double toDegrees (double number) {//radian to degrees
+		return((number*3.14159)/(3.14159/180));
 	}	
-	public static double toRadians  (double x) {// degree to radian
-		return((x * 3.14159)/(180));
+	public static double toRadians  (double number) {// degree to radian
+		return((number * 3.14159)/(180));
 	}
 	public static double discriminant (double a, double b, double c) { //formula comes from quadratic formula
 		return((b*b)-(4*a*c));

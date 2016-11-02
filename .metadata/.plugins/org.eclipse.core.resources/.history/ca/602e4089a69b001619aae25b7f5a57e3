@@ -1,8 +1,0 @@
-	public class DoMath {
-	public static void main (String []args) {
-		Calculate.exponent(6,2); 
-		System.out.println(Calculate.exponent(6,2));
-	}
-}
-		
-		

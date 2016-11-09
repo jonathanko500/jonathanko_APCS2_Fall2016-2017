@@ -16,7 +16,6 @@ public class ArraysLab3
 		assert (arr2.length > 0);
 		assert (arr1.length == arr2.length);
 		
-		
 	}
 	
 	/*
@@ -64,12 +63,7 @@ public class ArraysLab3
 	public static void rotateRight(int[] arr)
 	{
 		assert (arr.length > 0);
-		int lastElement = arr.length - 1;
-		int rotateRight = arr[lastElement];
-		for (int i = arr.length-1;i>0;i--) {
-		arr [i] = arr [i-1] ;
-	}
-	arr[0] = rotateRight;
+	
 	}
 
 	/*
@@ -97,9 +91,9 @@ public class ArraysLab3
 	
 	public static void main(String[] args) 
 	{
-	int [] arr1 = {5,10,15,20,25,30,35,40};
-	int [] arr2 = {7,14,21,28,35,42,49,56};
-	rotateRight(arr1);
-	
+		int [] arr1 = {5,10,20,25,30,35,40};
+		int [] arr2 = {7,14,212,28,35,42,49,56};
+		rotateRight(arr1);
+		System.out.println(Arrays.toString(arr1));
 	}
 }

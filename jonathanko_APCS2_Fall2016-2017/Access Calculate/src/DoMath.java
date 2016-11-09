@@ -1,0 +1,8 @@
+	public class DoMath {
+	public static void main (String []args) {
+		Calculate.toRadians(360) ; 
+		System.out.println(Calculate.toRadians(360));
+	}
+}
+		
+		

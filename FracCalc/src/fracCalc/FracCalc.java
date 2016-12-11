@@ -1,13 +1,27 @@
 package fracCalc;
 
+
+import java.util.*;
 public class FracCalc {
+
+
+
 
     public static void main(String[] args) 
     {
-        // TODO: Read the input from the user and call produceAnswer with an equation
+    	Scanner userInput = new Scanner(System.in);
+    	System.out.println("Enter expression or say quit.");
+    	String input = userInput.next();
+    		if (input != "quit") {
+    		}
+    	System.out.println(produceAnswer(input));
+    	}
 
-    }
-    
+
+    		
+    // TODO: Read the input from the user and call produceAnswer with an equation
+
+
     // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
     // This function takes a String 'input' and produces the result
     //
@@ -18,11 +32,66 @@ public class FracCalc {
     //      e.g. return ==> "1_1/4"
     public static String produceAnswer(String input)
     { 
+    	String expression = input;
+    	String [] convertArray =expression.split(" ");//converts strings to array and gets rid of all the spaces
+    	String [] fraction = parseOperands(convertArray); 
+    	
         // TODO: Implement this function to produce the solution to the input
         
         return "";
     }
 
+
+
+
     // TODO: Fill in the space below with any helper methods that you think you will need
-    
+   public static String[]parseOperands (String [] result) {//looks for operator sign and calls for correct operator method
+		String [] fraction = new String[6];
+		
+		
+    	return result;
+    	
+    }
+   public static int [] mixedNumb(int[] fraction) {//converts improper frac to mixed frac  
+	   for (int i=0; i<3;i++) {
+		   fraction [0] = fraction[1]/fraction[2];//whole number
+		   fraction [1] = fraction[1]%fraction[2];//numerator
+		   fraction [2] = fraction[2];//denominator
+	   }
+	   
+	   return fraction;
+   }
+   public static int [] improperFrac(int[] fraction) {//converts mixed num to improper frac
+	   for (int i = 0; i<3;i++){
+		   fraction [i] = fraction[0]*fraction[2];//whole number
+		   fraction[i+1] = fraction[0]+fraction[1];//numerator
+		   fraction[i+2] = fraction[2];//denominator
+	   }
+	   fraction[0]=0;
+	   return fraction;
+   }
+   
+   public static int [] addFrac(int []fraction) {//add fractions
+	   int[] added = new int[3];
+	   for (int i=0;i<3;i++) {
+		   added[i]=fraction[0]+fraction[4];
+		   added[i+1]=fraction[1]+fraction[5];
+		   added[i+2]=fraction[3]+fraction[6];
+	   }
+	   return added;
+   }
+   public static int [] subFrac( int []fraction) {//subtract fractions
+	   int [] subtracted = new int [3];
+	   for (int i=0;i<3;i++) {
+		  
+		   }
+		   
+		   
+	   
+	   
+	   
+   }
+	   
 }
+
+

@@ -1,0 +1,76 @@
+package fracCalc;
+
+
+import java.util.*;
+public class FracCalc {
+
+
+
+
+    public static void main(String[] args) 
+    {
+    	Scanner userInput = new Scanner(System.in);
+    	System.out.println("Enter expression or say quit.");
+    	String input = userInput.next();
+    		if (input != "quit") {
+    		}
+    	System.out.println(produceAnswer(input));
+    	}
+
+
+    		
+    // TODO: Read the input from the user and call produceAnswer with an equation
+
+
+    // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
+    // This function takes a String 'input' and produces the result
+    //
+    // input is a fraction string that needs to be evaluated.  For your program, this will be the user input.
+    //      e.g. input ==> "1/2 + 3/4"
+    //        
+    // The function should return the result of the fraction after it has been calculated
+    //      e.g. return ==> "1_1/4"
+    public static String produceAnswer(String input)
+    { 
+    	String expression = input;
+    	String [] convertArray =expression.split(" ");//converts strings to array and gets rid of all the spaces
+    	String [] values = parseOperands(convertArray); 
+    	
+        // TODO: Implement this function to produce the solution to the input
+        
+        return "";
+    }
+
+
+
+
+    // TODO: Fill in the space below with any helper methods that you think you will need
+    public static String [] parseOperands (String [] result) {//looks for operator sign and calls for correct operator method
+		String [] values = new String[6];
+		
+    	return result;
+    	
+    }
+
+
+   public static int [] mixedNumb(int[] values) {//converts improper frac to mixed frac  
+	   for (int i=0; i<3;i++) {
+		   values [0] = values[1]/values[2];
+		   values [1] = values[1]%values[2];
+		   values [2] = values[2];
+	   }
+	   
+	   return values;
+   }
+   public static int [] improperFrac(int[] values) {//converts mixed num to improper frac
+	   for (int i = 0; i<3;i++){
+		   values [0] = values[0]*values[2];
+		   values [1] = values[0]+values[1];
+		   values [2] = values[2];
+	   }
+	   values[0]=0;
+	   return values;
+   }
+}
+
+

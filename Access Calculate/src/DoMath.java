@@ -1,7 +1,7 @@
 	public class DoMath {
 	public static void main (String []args) {
-		Calculate.toDegrees(0.5) ; 
-		System.out.println(Calculate.toDegrees(0.5));
+		Calculate.max2(2.0,3.0,8.0); 
+		System.out.println(Calculate.max2(2.0,3.0,8.0));
 	}
 }
 		

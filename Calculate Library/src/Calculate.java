@@ -12,24 +12,30 @@ public class Calculate {
 		return((x+y+z)/3.0);
 	}	
 	public static double toDegrees (double x) {//radian to degrees
-		return((x*3.14159)/(3.14159/180));
+		return((x*3.14159)*(180/3.14159));
 	}	
 	public static double toRadians  (double x) {// degree to radian
-		return((x * 3.14159)/(180));
+		return(x * (3.14159/180));
 	}
 	public static double discriminant (double a, double b, double c) { //formula comes from quadratic formula
 		return((b*b)-(4*a*c));
 	}
-	public static int toImproperFrac (int number1, int number2, int number3) { 
-		return((number1*number2)/number3);
+	public static String toImproperFrac (int x,int y, int z) { //mixed number to improper frac
+		y = (x*z) + y;	
+		return(y +"/" +z);
 	}
-	public static int toMixedNum (int number1, int number2, int number3) {
-		return(number1+(number2/number3));
+	public static String toMixedNum (int x, int y, int z) {//improper frac to mixed number
+		x=y/z; 
+		y=y%z;
+		return(x + " " + y +"/" +z);
 		
 	}
-	public static int foil (int number1, int number2, int number3, int number4, int numbern) {
-		return (((number1*numbern)+number2)*((number3*numbern)+number4));
-	}	
+	public static String foil (int x, int y, int z, int w, String n) {//First Outside Inside Last
+		int a = (x*z);
+		int b = ((x*w)) + ((y*z));
+		int c = (y*w);
+		return(a + "n^2"+"+" + b + "n" + c);
+	}
 	public static boolean isDivisibleBy(int x, int y) {
 		if (y == 0) {
 			throw new IllegalArgumentException ("divide by 0");
@@ -82,11 +88,10 @@ public class Calculate {
 	public static double exponent (double x, int y) {
 		double returnNumber = 0;
 		double calcNumber = x;
-		for (int number = 1; number < y; number++) {
+		for (int number = 1; number < y;number++) {
 			returnNumber = calcNumber * x;
 			calcNumber = returnNumber;
 		}
-		System.out.println(returnNumber);
 		return (returnNumber);
 	}
 	public static int factorial (int x) {

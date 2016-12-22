@@ -16,7 +16,7 @@ public class Magpie3 {
 	 * 
 	 */
 	public String getResponse(String statement) {
-		public class Magpie2 {
+		class Magpie2;
 			public String getGreeting() {
 				return "Hello, let's talk.";
 			}

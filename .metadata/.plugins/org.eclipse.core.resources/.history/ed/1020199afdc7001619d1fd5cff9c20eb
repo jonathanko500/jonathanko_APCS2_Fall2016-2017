@@ -1,0 +1,9 @@
+
+public class practiceit {
+	public static void repl (String x,int y){
+	    for (int i =1; i<=y;i++){
+	        System.out.print(x);
+	    }
+	    
+	}
+}

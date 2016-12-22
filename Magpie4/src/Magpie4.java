@@ -23,7 +23,39 @@ public class Magpie4 {
 	 * response based on the rules given
 	 */
 	public String getResponse(String statement) {
-		
+		class Magpie2;
+		public String getGreeting() {
+			return "Hello, let's talk.";
+		}
+		public String getResponse(String statement) {
+			String response = "";
+			if (statement.indexOf("no") >= 0) {
+				response = "Why?";
+			}else if (statement.indexOf("hate") >= 0) {
+				response = "Why?";
+			}else if (statement.indexOf("like") >=0) {
+				response = "Why?";
+			}else if (statement.indexOf("Hello") >=0
+					|| statement.indexOf("Hi") >=0
+					|| statement .indexOf("Hey") >=0
+					|| statement .indexOf("hello") >=0
+					|| statement .indexOf("hi") >=0
+					|| statement .indexOf("hey") >=0 ) {
+				response = "Hello!";
+			} else if (statement.indexOf("mother") >= 0
+					|| statement.indexOf("father") >= 0
+					|| statement.indexOf("sister") >= 0
+					|| statement.indexOf("brother") >= 0) {
+				response = "Tell me more about your family.";
+			} else if (statement.indexOf("Mr.") >= 0
+					|| statement.indexOf("Mrs.") >= 0
+					|| statement.indexOf("Ms.") >= 0) {
+				response = "Sound like a good teacher.";
+			} else {
+				response = getRandomResponse();
+			}
+			return response;
+		}
 		// Paste Part 3 code here.  The method has new pieces that continue below and should flow from your previous code.
 
 

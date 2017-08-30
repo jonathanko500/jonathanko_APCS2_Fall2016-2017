@@ -1,9 +1,0 @@
-
-public class practiceit {
-	public static String repl(String x,int y){
-		   for (int i =1; i<=y;i++){
-			        System.out.print(x);
-		        }
-		    return x;
-	}
-}
